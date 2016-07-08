@@ -1,0 +1,30 @@
+---
+layout : index
+---
+{% assign bodyclass = 'project' %}
+<section class="flexcontainer--reverse">
+    <h1>{{page.title}}</h1>
+    <div class="bigthumb">
+        <img src="/images/projets/{{ page.image-folder }}/homepage.jpg">
+    </div>
+    <aside>
+        <ul>
+            <li>
+                Année : {{page.date | date  : '%Y'}}
+            </li>
+            <li class="tags">
+                {% for tag in page.tags %}
+                <span class="tag">{{tag}}</span>
+                {% endfor %}
+            </li>
+        </ul>
+        <p class="website">
+            <a href="{{page.url-project}}" class="button" rel="nofollow" >Voir le site</a>
+        </p>
+    </aside>
+    <div class="content">
+
+        {{content}}
+    </div>
+
+</section>

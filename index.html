@@ -1,0 +1,28 @@
+---
+layout: index
+title: Designer - Frontend developper, mais pas que.
+categories: homepage
+---
+
+<div class="flexcontainer">
+    {% for post in site.categories.projet limit:3 %}
+    <div class="col3 vignette">
+        <a href="{{ post.permalink }}" class="header">
+            <img src="/images/projets/{{ post.image-folder }}/thumb.jpg" alt="{{ post.description }}" width="409" height="409">
+        </a>
+        <h2>
+            {{ post.title }}
+        </h2>
+        <h3>
+            {% for tag in page.tags %}
+            <span>
+                {{ tag }}
+            </span>
+            {% endfor %}
+        </h3>
+        <p>
+            {{ post.description }}
+        </p>
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,44 @@
+#skillz{
+  h2{
+    margin-top: 0;
+  }
+}
+
+section {
+  h1 {
+    flex: 1 0 100%;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    padding-top:0.5rem;
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+  p {
+    padding-left: 0.9rem;
+    line-height: 1.6rem;
+  }
+  padding-bottom: 1rem;
+  .date {
+    font-weight: 400;
+    color: @tonic;
+    margin-bottom: 0.5rem;
+  }
+  .lieu {
+    color: @basevariante;
+    &:before{
+      content :'➤ ';
+    }
+  }
+}
+
+section#exp{
+  h2 ~ h2{
+    border-top: 1px dotted @clear;
+  }
+}
+

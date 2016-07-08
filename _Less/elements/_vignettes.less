@@ -1,0 +1,96 @@
+.vignette {
+  padding-bottom: 1rem;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 1rem;
+
+  &::after{
+    content: '';
+    .transition(100ms,ease-in-out;250ms);
+    background:no-repeat 50% 400%;
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left:50%;
+    top:20%;
+    margin-left: -31px;
+    border:1px solid @white;
+    opacity: 0;
+    border-radius: 30px;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+  }
+
+  &:hover {
+    .header {
+      img {
+        opacity: 0.9;
+      }
+      &::after{
+        bottom: -45px;
+        background-color: @tonic;
+      }
+    }
+    &::after{
+      top:25%;
+      //noinspection CssUnknownTarget
+      background: @white url('/images/eye.svg') 50% 50% no-repeat;
+      opacity: 1;
+      transform: rotateX(0deg);
+      width:80px;
+      height:80px;
+      border-radius: 80px;
+      margin-left: -40px;
+    }
+  }
+
+  .header {
+    border-bottom: 2px solid lighten(@base, 75);
+    background-color: @base;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    .transition(125ms);
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    margin-bottom: 2rem;
+    &::after{
+      .transition(125ms);
+      content: '.';
+      display: block;
+      position: absolute;
+      left:0;
+      bottom: -50px;
+      width: 100%;
+      height: 50px;
+      background-color: @base;
+    }
+
+  }
+
+
+  h2, h3 {
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+    margin: 0.5em 0;
+    font-style: italic;
+    font-weight: 100;
+    color: @base;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+  }
+}
+
