@@ -8,7 +8,6 @@
     });
 })();
 
-
 function preloadImage(img) {
     var imgobj = new Image();
     img.setAttribute('data-src', img.src.valueOf());
