@@ -16,6 +16,15 @@ timezone: Europe/Paris
 encoding: utf-8
 keep_files: [css,js]
 exclude: [README.md]
+navigation:
+  - title: home
+    url: /
+  - title: portfolio
+    url: /projets/
+  - title: cv
+    url: /cv
+  - title: a propos
+    url: /about
 
 
 # Build settings

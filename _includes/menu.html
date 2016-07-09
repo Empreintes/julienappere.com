@@ -1,6 +1,11 @@
 <nav class="flexcontainer">
-    <a href="/" class="activ">Home</a>
-    <a href="/projets/"> Portfolio</a>
-    <a href="/cv"> Cv</a>
-    <a href="/about"> A propos</a>
+    {% for item in site.navigation %}
+    {% assign class = nil %}
+    {% if page.url == item.url %}
+    {% assign class = 'active' %}
+    {% endif %}
+    <a href="{{ item.url }}" class="{{ class }}">
+        {{ item.title }}
+    </a>
+    {% endfor %}
 </nav>

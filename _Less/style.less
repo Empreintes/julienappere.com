@@ -105,13 +105,16 @@ header {
       border-radius: 0.25em;
       font-weight: 100;
       .transition(125ms);
-      &.activ {
+      &.active {
         background-color: @white;
         color: @base;
       }
       &:hover {
         background-color: lighten(@base, 20);
         color: @white;
+      }
+      &:first-letter{
+        text-transform: uppercase;
       }
     }
   }
@@ -156,7 +159,7 @@ body.homepage {
         border-radius: 0.25em;
         font-weight: 100;
         .transition(125ms);
-        &.activ {
+        &.active {
           background-color: @white;
           color: @base;
         }
