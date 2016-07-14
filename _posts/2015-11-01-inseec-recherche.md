@@ -13,6 +13,6 @@ categories: projet
 
 Développement backend pour le site portail de la recherche du Groupe INSEEC. basé sur un wordpress, ajout de fonctionalité avancé : forum, chat, gestion de publication, profil public administrable.
 
-Pour les besions spécifique, j'ai été amené a modifier les requetes du plugin de recherche installé afin de prendre en compte certains champs utilisés par d'autres plugin du site.
+Modification des plugins de recherches installés afin de prendre en compte certains champs utilisés par d'autres plugin du site.
 
 Refonte d'un wordpress déja existant, en binome avec [ekosme](http://ekosme.com) pour l'intégration et le design.

@@ -10,7 +10,7 @@ author: Julien
 tags : [developpement,backend,prestashop,frontend]
 categories: projet
 ---
-En collaboration avec [USEDAYS Studio](http://www.usedaystudio.com/), design et illustration par [James Bertrand](http://www.jamesbertrand.com/)
+E-commerce réalisé avec Prestashop, intégration du module de paiement ATOS SIPS 600 de [TrogloGeek](https://github.com/TrogloGeek/prestashop-tggatos-module). En collaboration avec [USEDAYS Studio](http://www.usedaystudio.com/), design et illustration par [James Bertrand](http://www.jamesbertrand.com/)
 
 
 

@@ -11,7 +11,7 @@ tags : [design,intégration,frontend,wordpress,plugin]
 categories: projet
 ---
 
-Développement frontend, pour ajouter des fonctionalités ajax au site worpress. Mise en place d'un parti privé d'échange de fichier simplifié.
+Développement frontend, pour ajouter des fonctionalités ajax au site worpress. Mise en place d'une partie privé d'échange de fichier.
 
 En collaboration avec [USEDAYS Studio](http://www.usedaystudio.com/), design et illustration par [James Bertrand](http://www.jamesbertrand.com/)
 

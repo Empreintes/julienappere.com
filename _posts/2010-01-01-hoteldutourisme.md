@@ -11,6 +11,6 @@ tags : [design,intégration,wordpress]
 categories: projet
 ---
 
-Création d'un template wordpress pour l'hotel du tourisme à zonza en corse. Ce template est facilement maintenable pour ajouter ou modifier des éléments du site.
+Design, intégration et mise en production d'un template wordpress pour l'hotel du tourisme.
 
 Maintenance du site par France visuel.

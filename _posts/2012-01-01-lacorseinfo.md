@@ -11,4 +11,4 @@ tags : [intégration]
 categories: projet
 ---
 
-En complement de son portail voyager en corse, web corse communication décide de lancer un portail d'information différent, basé sur un systeme wordpress.
+Portail d'information pour Web Corse Communication basé sur un systeme wordpress.

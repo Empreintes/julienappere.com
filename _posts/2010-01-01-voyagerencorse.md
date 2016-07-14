@@ -13,8 +13,8 @@ categories: projet
 
 Design et intégration d'un site portail contenant plus de 800 références dans toute la corse.
 
-Projet complexe comprenant un systeme carte, des fiches administrable par le client, positionement de marqueur par théme.
+carte interactive (serveur privé open streetmap), fiches administrables, gestion de groupe.
 
-Réaliser en binome avec un développeur backend, pour la société web corse communication via vf-online.
+En binome avec un développeur backend, pour la société Web Corse Communication via vf-online.
 
-Maintenance du site par Web corse communication.
+Maintenance du site par Web Corse Communication.

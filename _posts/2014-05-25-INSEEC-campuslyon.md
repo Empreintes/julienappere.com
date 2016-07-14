@@ -11,7 +11,7 @@ tags : [design,intégration,html5,css3,static]
 categories: projet
 ---
 
-Pour l'installation de groupe INSEEC dans de nouveau locaux, j'ai était en charge de la création d'un langing page présentant le nouveau projet.
+En charge de la création d'un langing page présentant le nouveau projet du Groupe INSEEC sur Lyon.
 
 Aprés validation du design des maquettes effectué sous photoshop, j'ai utilisé le générateur de site statique [Middleman](https://middlemanapp.com), couplet avec les technologies Scss.
 
