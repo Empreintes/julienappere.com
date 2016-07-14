@@ -16,18 +16,11 @@
                 ➭ Trouvez moi sur
             </p>
             <div class="flexcontainer" id="social">
-                <a href="http://twitter.com/empreintes">
-                    <img src='/images/twitter.png' alt="twitter" width="77" height="77">
-                </a>
-                <a href="#">
-                    <img src='/images/linkedin.png' alt="link" width="77" height="77">
-                </a>
-                <a href="#">
-                    <img src='/images/instagram.png' alt="twitter" width="77" height="77">
-                </a>
-                <a href="#">
-                    <img src='/images/googleplus.png' alt="Google" width="77" height="77">
-                </a>
+                {% for item in site.social %}
+                    <a href="{{item.url}}">
+                        <img src="/images/{{item.name | downcase }}.png" name="{{item.name}}" width="77" height="77">
+                    </a>
+                {% endfor %}
             </div>
         </div>
 

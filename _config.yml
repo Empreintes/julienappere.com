@@ -26,6 +26,15 @@ navigation:
   - title: a propos
     url: /about
 
+social:
+  - url: https://github.com/Empreintes
+    name: Github
+  - url: https://www.linkedin.com/in/julienappere
+    name: LinkedIn
+  - url: https://twitter.com/Empreintes
+    name: Twitter
+  - url: http://stackoverflow.com/users/467836/julien
+    name: Stackoverflow
 
 # Build settings
 markdown: kramdown
