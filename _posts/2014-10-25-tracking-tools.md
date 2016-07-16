@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Trackign tool"
+title: "Tracking tool"
 date: 2014-06-09
 permalink : /projets/inseec/tracking-tool
 description : 'outil interne'

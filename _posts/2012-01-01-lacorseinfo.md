@@ -2,7 +2,7 @@
 layout: project
 title: 'la Corse Info'
 date: 2012-01-01
-permalink : /projets/portail/voyagerencorse
+permalink : /projets/portail/lacorseinfo
 description : 'Site portail'
 image-folder : lacorseinfo
 url-project: http://www.lacorse.info/
