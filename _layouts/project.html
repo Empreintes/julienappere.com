@@ -2,29 +2,38 @@
 layout : index
 ---
 {% assign bodyclass = 'project' %}
-<section class="flexcontainer--reverse">
-    <h1>{{page.title}}</h1>
+<section class="flexcontainer">
+    <a href="/projets" class="breadcrum">Portfolio</a>
+    <h1> {{page.title}}</h1>
     <div class="bigthumb">
         <img src="/images/projets/{{ page.image-folder }}/homepage.jpg">
     </div>
-    <aside>
-        <ul>
-            <li>
-                Année : {{page.date | date  : '%Y'}}
-            </li>
-            <li class="tags">
-                {% for tag in page.tags %}
-                <span class="tag">{{tag}}</span>
-                {% endfor %}
-            </li>
-        </ul>
-        <p class="website">
-            <a href="{{page.url-project}}" class="button" rel="nofollow" >Voir le site</a>
-        </p>
-    </aside>
-    <div class="content">
-
-        {{content}}
+    <div class="flexcontainer">
+        <aside>
+            <ul>
+                <li>
+                    Année : {{page.date | date : '%Y'}}
+                </li>
+                <li class="tags">
+                    {% for tag in page.tags %}
+                    <span class="tag">{{tag}}</span>
+                    {% endfor %}
+                </li>
+            </ul>
+            <p class="website">
+                <a href="{{page.url-project}}" class="button" rel="nofollow">Voir le site</a>
+            </p>
+        </aside>
+        <div class="content">
+            {{content}}
+        </div>
     </div>
-
+    <div id="navigation" class="flexcontainer">
+        {% if page.previous.url %}
+        <a class="prev" href="{{page.previous.url}}">&#8617; Précédent</a>
+        {% endif %}
+        {% if page.next.url %}
+        <a class="next" href="{{page.next.url}}">suivant &#8618;</a>
+        {% endif %}
+    </div>
 </section>
