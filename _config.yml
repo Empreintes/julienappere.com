@@ -9,7 +9,7 @@
 title: Julien Appéré - Frontend dev
 email: julien.appere@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Webdesigner & intégrateur Mais pas que.
+  Frontend dev Mais pas que.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://julienappere.com" # the base hostname & protocol for your site
 timezone: Europe/Paris
