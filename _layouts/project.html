@@ -30,10 +30,14 @@ layout : index
     </div>
     <div id="navigation" class="flexcontainer">
         {% if page.previous.url %}
-        <a class="prev" href="{{page.previous.url}}">&#8617; Précédent</a>
+        <a class="prev" href="{{page.previous.url}}">
+            prev
+        </a>
         {% endif %}
         {% if page.next.url %}
-        <a class="next" href="{{page.next.url}}">suivant &#8618;</a>
+        <a class="next" href="{{page.next.url}}">
+            next
+        </a>
         {% endif %}
     </div>
 </section>
