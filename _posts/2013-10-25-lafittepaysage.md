@@ -2,7 +2,7 @@
 layout: project
 title: "Lafitte paysage"
 date: 2013-06-09
-permalink : /projets/inseec/laffitepaysage
+permalink : /projets/laffitepaysage
 description : 'site vitrine'
 image-folder : lafittepaysage
 url-project: http://lafittepaysage.com/
