@@ -1,4 +1,11 @@
 <nav class="flexcontainer">
+    {% assign homeactiv = nil %}
+    {% if page.categories contains 'homepage' %}
+    {% assign homeactiv = 'active' %}
+    {% endif %}
+    <a href="/" class="{{ homeactiv }}">
+        Home
+    </a>
     {% for item in site.navigation %}
     {% assign class = nil %}
     {% if page.url contains item.url %}
