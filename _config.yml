@@ -16,6 +16,7 @@ timezone: Europe/Paris
 encoding: utf-8
 keep_files: [css,js]
 exclude: [README.md]
+
 navigation:
   - title: portfolio
     url: /projets/
@@ -33,6 +34,29 @@ social:
     name: Twitter
   - url: http://stackoverflow.com/users/467836/julien
     name: Stackoverflow
+
+refs:
+  - title: Groupe INSEEC
+    logo: inseec.jpg
+    url: inseec.com
+  - title: Kedge Business School
+    logo: kedge.jpg
+    url: kedge.com
+  - title: CCI Bordeaux
+    logo: cci.jpg
+    url: bordeaux.cci.fr
+  - title: Ekosme
+    logo: ekosme.jpg
+    url: ekosme.com
+  - title: james Bertrand
+    logo: james.jpg
+    url: jamesbetrand.com
+  - title: usedays
+    logo: usedays.jpg
+    url: usedaystudio.com
+  - title: Romain Palacin
+    logo: rp.jpg
+    url: romain-palacin.fr
 
 # Build settings
 markdown: kramdown

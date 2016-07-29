@@ -39,6 +39,15 @@
             <p class="title">
                 expertise
             </p>
+            <p>
+               Développeur frontend, webdesigner, intégrateur, graphiste, chef de projet, j'ai 35 ans et beaucoup de casquettes.
+            </p>
+            <p>
+                Depuis plus de 10 ans sur Bordeaux, je réalise des sites web, e-commerces et autre webapp.
+            </p>
+            <p>
+                N'hésitez pas à prendre <a href="/about">contact</a> avec moi ou télécharger directement <a href="/fichiers/cv_julienappere.pdf" class="button">mon cv</a>
+            </p>
         </div>
         <div class="col3">
             <p class="title">
@@ -47,16 +56,24 @@
             <div class="flexcontainer" id="social">
                 {% for item in site.social %}
                 <a href="{{item.url}}">
-                    <img src="/images/{{item.name | downcase }}.png" name="{{item.name}}" width="77" height="77">
+                    <img src="/images/{{item.name | downcase }}.png" name="{{item.name}}" alt="{{item.name}}" width="77" height="77">
                 </a>
                 {% endfor %}
+            </div>
+            <div id="infos">
+                <div>
+                    Email :  <a href="mailto:contact@julienappere.com">contact@julienappere.com</a>
+                </div>
+                <div>
+                    Respawn :   Bordeaux - Mérignac
+                </div>
             </div>
         </div>
 
     </div>
     <div class="container" id="mentions">
-        &copy; {{ site.time | date: '%Y' }} fait maison pour le fun, si vous trouvez un bug c'est par <a
-            href="/about">ici</a>.
+        &copy; {{ site.time | date: '%Y' }} site codé avec seulement deux doigts, si vous trouvez un bug c'est par <a
+            href="https://github.com/Empreintes/julienappere.com/issues">ici</a>.
         Sauf autorisation la reproduction de tout ou partie des photos et créations présentes sur ce site est interdite.
         Les marques citées appartiennent à leurs propriétaires respectifs.
     </div>
