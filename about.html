@@ -2,11 +2,12 @@
 layout: index
 permalink: about
 ---
+<aside class="col1-20">
+    <img src="/images/profile.jpg">
+</aside>
+<section id="about" class="col">
+    <h1>{{site.description}}</h1>
 
-<section id="about" class="flexcontainer">
-    <img src="images/profile.jpg" width="250" height="250" title="Julien Appéré" class="col">
-    <div class="col3">
-        <h1>{{site.description}}</h1>
         <p>
             J'ai rapidement delaissé mes pinceaux pour une tablette graphique et un (superbe) <a
                 href="https://vimeo.com/154662889">clavier mecanique</a>.
@@ -21,18 +22,18 @@ permalink: about
         <p>
             J'aime passer mes soirées sur des nouvelles technologies, et parfois même les week end.
         </p>
-    </div>
 </section>
 
-<section id="clients" class="flexcontainer">
-    <h1>ils ont déja fait appel a moi</h1>
+<section id="clients" class="col">
+    <h1>Ils ont fait appel a moi</h1>
     <ul class="flexcontainer">
         {% for item in site.refs %}
-        <li class="col">
+        <li class="col5">
             <a href="http://{{item.url}}">
-                <img src="/images/refs/{{ item.logo }}" title="{{item.title}}" alt="{{item.title}}">
+                <img src="/images/refs/{{ item.logo }}" title="{{item.title}}" alt="{{item.title}}" width="150" height="150">
             </a>
         </li>
         {% endfor%}
     </ul>
 </section>
+
