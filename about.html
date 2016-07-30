@@ -8,7 +8,8 @@ permalink: about
     <div class="col3">
         <h1>{{site.description}}</h1>
         <p>
-            J'ai rapidement delaissé mes pinceaux pour une tablette graphique et un (superbe) <a href="https://vimeo.com/154662889">clavier mecanique</a>.
+            J'ai rapidement delaissé mes pinceaux pour une tablette graphique et un (superbe) <a
+                href="https://vimeo.com/154662889">clavier mecanique</a>.
         </p>
         <p>
             Mes compétences acquisent et perfectionnées durant tout mon parcour professionel, me permettent de déployer
@@ -23,6 +24,15 @@ permalink: about
     </div>
 </section>
 
-<section id="client" class="flexcontainer">
-    <h1>Références</h1>
+<section id="clients" class="flexcontainer">
+    <h1>ils ont déja fait appel a moi</h1>
+    <ul class="flexcontainer">
+        {% for item in site.refs %}
+        <li class="col">
+            <a href="http://{{item.url}}">
+                <img src="/images/refs/{{ item.logo }}" title="{{item.title}}" alt="{{item.title}}">
+            </a>
+        </li>
+        {% endfor%}
+    </ul>
 </section>
