@@ -2,38 +2,58 @@
 layout: index
 permalink: about
 ---
-<aside class="col1-20">
-    <img src="/images/profile.jpg">
-</aside>
-<section id="about" class="col">
-    <h1>{{site.description}}</h1>
+<div class="flexcontainer">
+    <aside id="profil" class="col3-20">
+        <img src="/images/profile.jpg" class="fullwidth">
+    </aside>
+    <div id="rightcol" class="col">
+        <section id="about" class="col">
+            <h1>{{site.description}}</h1>
 
-        <p>
-            J'ai rapidement delaissé mes pinceaux pour une tablette graphique et un (superbe) <a
-                href="https://vimeo.com/154662889">clavier mecanique</a>.
-        </p>
-        <p>
-            Mes compétences acquisent et perfectionnées durant tout mon parcour professionel, me permettent de déployer
-            un site web complet, des webapps ou tout projets web nécessitant du développement spécifique.
-        </p>
-        <p>
-            Touche à tout, j'administre mes raspberry pi entre deux maquettes de site web.
-        </p>
-        <p>
-            J'aime passer mes soirées sur des nouvelles technologies, et parfois même les week end.
-        </p>
-</section>
+            <p>
+                J'ai rapidement delaissé mes pinceaux pour une tablette graphique et un (superbe) <a
+                    href="https://vimeo.com/154662889">clavier mecanique</a>.
+            </p>
+            <p>
+                Mes compétences acquisent et perfectionnées durant tout mon parcour professionel, me permettent de
+                déployer
+                un site web complet, des webapps ou tout projets web nécessitant du développement spécifique.
+            </p>
+            <p>
+                Touche à tout, j'administre mes raspberry pi entre deux maquettes de site web.
+            </p>
+            <p>
+                J'aime passer mes soirées sur des nouvelles technologies, et parfois même les week end.
+            </p>
+        </section>
 
-<section id="clients" class="col">
-    <h1>Ils ont fait appel a moi</h1>
-    <ul class="flexcontainer">
-        {% for item in site.refs %}
-        <li class="col5">
-            <a href="http://{{item.url}}">
-                <img src="/images/refs/{{ item.logo }}" title="{{item.title}}" alt="{{item.title}}" width="150" height="150">
-            </a>
-        </li>
-        {% endfor%}
-    </ul>
-</section>
-
+        <section id="clients" class="col">
+            <h1>Ils ont fait appel a moi</h1>
+            <ul class="flexcontainer">
+                {% for item in site.refs %}
+                <li class="col5">
+                    <a href="http://{{item.url}}">
+                        <img src="/images/refs/{{ item.logo }}" title="{{item.title}}" alt="{{item.title}}" width="150"
+                             height="150">
+                    </a>
+                </li>
+                {% endfor%}
+            </ul>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <form action="/about#contact" class="flexcontainer">
+                <label for="nom">Nom</label>
+                <input id="nom" type="text" maxlength="50">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" maxlength="50">
+                <label for="email">email</label>
+                <input id="email" type="email">
+                <label for="msg" class="">message : </label>
+                <textarea id="msg"></textarea>
+                <div class="flexbreakline"></div>
+                <input type="submit" class="button">
+            </form>
+        </section>
+    </div>
+</div>
