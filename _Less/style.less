@@ -381,24 +381,17 @@ footer {
     }
   }
   #social {
-    width: 50%;
+    width: 100%;
     a {
-      height: 50px;
-      width: 50px;
+      display: inline-block;
+      height: 35px;
+      width: 35px;
       text-decoration: none;
-      .col4;
+      padding: 0.5rem 0.5rem;
       img {
-        .transition(125ms);
         width: 35px;
         height: 35px;
         display: block;
-        margin: auto;
-      }
-      &:hover {
-        img {
-          width: 50px;
-          height: 50px;
-        }
       }
     }
   }
@@ -412,7 +405,8 @@ footer {
   #mentions {
     margin: 3rem auto;
     padding: 1.25rem;
-    width: 50%;
+    width: 80%;
+    max-width:@sm-max;
     color: darken(@base, 6);
     background-color: lighten(@base, 10);
     font-weight: 100;
