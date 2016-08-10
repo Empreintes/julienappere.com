@@ -104,11 +104,26 @@ header {
   background-color: @base;
   padding: 1.25rem 0;
   margin-bottom: 1rem;
+  @media @phone {
+    margin-bottom: 0.5em;
+    height: 4.5rem;
+  }
   h1 {
     color: @white;
     font-size: 1.3rem;
     flex: 1;
     margin: auto;
+    @media @phone {
+      padding-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      display: block;
+      width: 50%;
+      text-align: center;
+      .separator{
+        display: none;
+      }
+    }
   }
   nav {
     flex: 1;
@@ -120,7 +135,17 @@ header {
       text-decoration: none;
       border-radius: 0.25em;
       font-weight: 100;
+      text-align: center;
+      min-width: 4rem;
       .transition(125ms);
+      @media @phone{
+        font-size: 0.9rem;
+        margin: 0 0.35em;
+        padding: 0.6em 0.1em;
+        text-decoration: none;
+        border-radius: 0.25em;
+        font-weight: 100;
+      }
       &.active {
         background-color: @white;
         color: @base;
@@ -144,14 +169,14 @@ body.homepage {
       display: block;
       width: 100%;
     }
+    @media @phone {
+      height: 4.5rem;
+    }
     height: 300px;
     color: @white;
     border-bottom: 5px solid darken(@base, 10);
     margin-bottom: 1em;
-    @media @phone {
-      margin-bottom: 0.5em;
-      height: 4.5rem;
-    }
+
     h1 {
       font-size: 1.9rem;
       display: block;
@@ -194,11 +219,12 @@ body.homepage {
         @media @phone{
           font-size: 0.9rem;
           margin: 0 0.35em;
-          padding: 0.6em 0.2em;
+          padding: 0.6em 0.1em;
           text-decoration: none;
           border-radius: 0.25em;
           font-weight: 100;
         }
+
       }
     }
   }
