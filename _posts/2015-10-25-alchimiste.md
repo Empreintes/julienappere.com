@@ -2,7 +2,7 @@
 layout: project
 title: "L'ALCHIMISTE torrefacteur"
 date: 2014-06-09
-permalink : /projets/alchimsite
+permalink : /projets/alchimiste
 description : 'Ecommerce'
 image-folder : alchimiste
 url-project: http://alchimiste-cafes.com/
