@@ -111,22 +111,17 @@ header {
     margin-bottom: 0.5em;
     height: 4.5rem;
   }
-  .container {
-    display: block;
-    width: 100%;
-  }
   h1 {
     color: @white;
     font-size: 1.3rem;
-    flex: 1;
-    margin: auto;
+    width: 50%;
     @media @phone {
       padding-top: 0;
       margin-bottom: 1rem;
       font-size: 1.2rem;
       display: block;
-      width: 50%;
       text-align: center;
+      width:100%;
       .separator {
         display: none;
       }
@@ -134,8 +129,11 @@ header {
   }
   nav {
     flex: 1;
+
     &.flexcontainer{
+      width: 50%;
       @media @phone{
+        width: 100%;
         display: flex;
       }
     }
@@ -152,7 +150,6 @@ header {
       .transition(125ms);
       @media @phone {
         font-size: 0.9rem;
-        margin: 0;
         padding: 0.6em 0.1em;
         text-decoration: none;
         border-radius: 0.25em;
@@ -230,7 +227,6 @@ body.homepage {
         }
         @media @phone {
           font-size: 0.9rem;
-          margin: 0;
           padding: 0.6em 0.1em;
           text-decoration: none;
           border-radius: 0.25em;
