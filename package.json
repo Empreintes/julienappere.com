@@ -1,0 +1,24 @@
+{
+  "name": "julienappere.com",
+  "version": "1.0.0",
+  "description": "site web pro",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Empreintes/julienappere.com.git"
+  },
+  "author": "Julien Appere",
+  "license": "CC-BY-NC-SA-3.0",
+  "bugs": {
+    "url": "https://github.com/Empreintes/julienappere.com/issues"
+  },
+  "homepage": "https://github.com/Empreintes/julienappere.com#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-less": "^3.2.0"
+  }
+}

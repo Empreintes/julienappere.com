@@ -5,3 +5,5 @@ _src
 .idea
 *.DS_Store
 .DS_Store
+node_modules/
+
