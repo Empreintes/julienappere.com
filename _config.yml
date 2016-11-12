@@ -15,7 +15,7 @@ url: "http://julienappere.com" # the base hostname & protocol for your site
 timezone: Europe/Paris
 encoding: utf-8
 keep_files: [css,js]
-exclude: [README.md]
+exclude: [README.md,node_modules,.csscomb.json,gulpfile.js]
 
 navigation:
   - title: portfolio
