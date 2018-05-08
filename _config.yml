@@ -11,7 +11,7 @@ email: julien.appere@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Frontend dev, mais pas que.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://julienappere.com" # the base hostname & protocol for your site
+url: "https://julienappere.com" # the base hostname & protocol for your site
 timezone: Europe/Paris
 encoding: utf-8
 keep_files: [css,js]
