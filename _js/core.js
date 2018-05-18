@@ -31,6 +31,7 @@ window.preloadImage = function (img) {
     imgobj.onerror = function () {
         console.log(this.src + " introuvable");
     };
-}
+};
+
 
 
