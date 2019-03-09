@@ -1,7 +1,8 @@
 var gulp = require("gulp");
 var less = require("gulp-less");
 var csscomb = require("gulp-csscomb");
-var rename = require("gulp-rename");
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 gulp.task("default", function() {
     console.log("demarage des watcher css/js");
@@ -17,7 +18,8 @@ gulp.task("css",function () {
 });
 
 gulp.task("js",function () {
-    return gulp.src("_js/core.js")
-        .pipe(rename("core.min.js"))
+    return gulp.src("_js/*.js")
+        .pipe(concat("core.min.js"))
+        .pipe(uglify())
         .pipe(gulp.dest("_site/js/"));
 });
