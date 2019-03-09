@@ -1,6 +1,5 @@
 var gulp = require("gulp");
 var less = require("gulp-less");
-var csscomb = require("gulp-csscomb");
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
@@ -13,7 +12,6 @@ gulp.task("default", function() {
 gulp.task("css",function () {
     return gulp.src("_Less/style.less")
         .pipe(less())
-        .pipe(csscomb()) // pour la beauté de la chose
         .pipe(gulp.dest("_site/css/"));
 });
 
